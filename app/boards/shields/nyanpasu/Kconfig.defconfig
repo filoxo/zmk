@@ -1,0 +1,5 @@
+if SHIELD_NYANPASU
+
+config ZMK_KEYBOARD_NAME
+    default "Nyanpasu"
+endif

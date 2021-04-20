@@ -1,0 +1,39 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+#define BASE 0
+#define FN1  1
+#define FN2  2
+
+/ {
+  keymap {
+    compatible = "zmk,keymap";
+
+    base {
+      bindings = <
+&kp TAB   &kp Q     &kp W    &kp E     &kp R      &kp T      &kp KP_N7 &kp KP_N8 &kp KP_N9       &kp Y     &kp U     &kp I     &kp O     &kp P    &kp BSPC
+&kp ESC   &kp A     &kp S    &kp D     &kp F      &kp G      &kp KP_N4 &kp KP_N5 &kp KP_N6       &kp H     &kp J     &kp K     &kp L     &kp SEMI &kp SQT
+&kp LSHFT &kp Z     &kp X    &kp C     &kp V      &kp B      &kp KP_N1 &kp KP_N2 &kp KP_N3       &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp ENTER
+&kp LCTRL &kp LGUI  &kp LALT &kp KP_NLCK   &lt FN1 SPACE     &kp KP_N0 &kp KP_DOT &kp KP_ENTER     &lt FN2 SPACE     &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT
+      >;
+    };
+
+    fn1 {
+      bindings = <
+&trans    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5      &trans  &trans  &trans            &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
+&trans    &trans    &trans    &trans    &trans    &trans      &trans  &trans  &trans            &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans      &trans  &trans  &trans            &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans        &trans            &trans  &trans  &trans                  &trans        &trans    &trans    &trans    &trans
+      >;
+    };
+
+    fn2 {
+      bindings = <
+&trans    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5      &trans  &trans  &trans            &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp DEL
+&trans    &trans    &trans    &trans    &trans    &trans      &trans  &trans  &trans            &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans    &trans    &trans      &trans  &trans  &trans            &trans    &trans    &trans    &trans    &trans    &trans
+&trans    &trans    &trans    &trans        &trans            &trans  &trans  &trans                  &trans        &trans    &trans    &trans    &trans
+      >;
+    };
+  };
+};
