@@ -1,0 +1,9 @@
+file_format: "1"
+id: opus 
+name: Opus
+type: shield
+url: https://github.com/filoxo/zmk/tree/opus
+requires: [pro_micro]
+features:
+  - keys
+  - encoder
